@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
     // Include your env variables in the array below using the name from the .env file by adding them as strings
-    // always starting with 'VITE-REACT-APP-${YOUR STRING}' e.g EnvironmentPlugin(['VITE-REACT-APP-API-BASE-URL'])
+    // always prefixed with 'VITE_' like 'VITE-VUE-APP-${YOUR STRING}' e.g EnvironmentPlugin(['VITE-VUE-APP-API-BASE-URL'])
     EnvironmentPlugin([])
   ],
   resolve: {
