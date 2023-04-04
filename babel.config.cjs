@@ -1,8 +1,4 @@
 module.exports = {
-  presets: [
-    '@vue/app',
-    ['@babel/preset-env', { targets: { node: 'current' } }],
-    '@babel/preset-react'
-  ],
+  presets: [['@babel/preset-env', { targets: { node: 'current' } }]],
   plugins: ['@babel/plugin-syntax-jsx', '@babel/plugin-transform-runtime']
 };
