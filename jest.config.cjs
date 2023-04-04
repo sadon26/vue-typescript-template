@@ -29,7 +29,9 @@ module.exports = {
     '^.+\\.(ts|tsx)$': 'ts-jest'
   },
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1'
+    '^@/(.*)$': '<rootDir>/src/$1',
+    '\\.(css|scss)$': '<rootDir>/__mocks__/styleMock.cjs',
+    '\\.svg$': '<rootDir>/__mocks__/svgMock.js'
   },
   transformIgnorePatterns: [
     '/node_modules/(?!pinia/.*)',
