@@ -4,8 +4,11 @@
     "es2021": true,
     "jest/globals": true
   },
+  "extends": ["plugin:vue/vue3-recommended", "plugin:prettier/recommended", "eslint:recommended"],
   "overrides": [],
+  "parser": "vue-eslint-parser",
   "parserOptions": {
+    "parser": "@typescript-eslint/parser",
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
